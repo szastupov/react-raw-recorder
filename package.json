@@ -1,7 +1,8 @@
 {
   "name": "react-raw-recorder",
   "version": "1.0.0",
-  "description": "A simple react widget than records mic audio to AudioBuffer",
+  "description":
+    "A simple react component than records mic audio to AudioBuffer",
   "author": "Stepan Zastupov <stepan.zastupov@gmail.com>",
   "repository": "https://github.com/szastupov/react-raw-recorder.git",
   "main": "./lib/ReactRawRecorder.js",
