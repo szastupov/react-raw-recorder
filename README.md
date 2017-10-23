@@ -3,11 +3,11 @@
 React wrapper for [Raw Media Recorder](https://github.com/szastupov/raw-media-recorder)
 
 ## Install
-``` yarn add raw-media-recorder ```
+``` yarn add react-raw-recorder ```
 
 or
 
-``` npm install raw-media-recorder ```
+``` npm install react-raw-recorder ```
 
 ## Usage
 
