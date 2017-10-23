@@ -1,8 +1,7 @@
 {
   "name": "react-raw-recorder",
-  "version": "1.0.0",
-  "description":
-    "A simple react component than records mic audio to AudioBuffer",
+  "version": "1.0.1",
+  "description": "A simple react component than records mic audio to AudioBuffer",
   "author": "Stepan Zastupov <stepan.zastupov@gmail.com>",
   "repository": "https://github.com/szastupov/react-raw-recorder.git",
   "main": "./lib/ReactRawRecorder.js",
@@ -15,7 +14,9 @@
     "@types/react": "^16.0.15",
     "typescript": "^2.5.3"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "raw-media-recorder": "^1.4.1"
   },
