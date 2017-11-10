@@ -22,10 +22,11 @@ export class ReactRawRecorder extends Component<
     recording: false
   }
 
-  initStream = stream => {
+  constructor(props) {
+    super(props)
+
     let recorder = (this.recorder = new RawMediaRecorder(
-      this.props.audioContext,
-      stream
+      this.props.audioContext
     ))
     recorder.onstart = () => {
       this.props.onRecording(true)
@@ -38,20 +39,11 @@ export class ReactRawRecorder extends Component<
     recorder.ondata = data => this.props.onRecorded(data)
   }
 
-  requestMic() {
-    return navigator.mediaDevices
-      .getUserMedia({ audio: true, video: false })
-      .then(this.initStream)
-      .catch(err => console.error(err))
-  }
-
   toggle = () => {
     if (this.state.recording) {
       this.recorder.stop()
     } else if (this.recorder) {
       this.recorder.start()
-    } else {
-      this.requestMic().then(() => this.recorder.start())
     }
   }
 
